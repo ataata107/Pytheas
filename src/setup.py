@@ -22,6 +22,7 @@ setup(
                         'psycopg2-binary',
 			'tqdm>=4.36.1',
                         'sortedcontainers>=2.1.0'],
+	package_data={'pytheas': ['*.json']},  # <-- ADD THIS LINE
     setup_requires=['pytest-runner'],
     tests_require=['pytest==4.4.1'],
     test_suite='tests'
